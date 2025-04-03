@@ -1,16 +1,14 @@
 // базовые подключения
-@import "vars";
-@import "mixins";
-@import "fonts";
-@import "settings";
+@import 'vars';
+@import 'mixins';
+@import 'fonts';
+@import 'settings';
 
 // подключения компонентов страницы
-@import "./components/header";
+@import './components/ui/button-primary';
+@import './components/ui/button-transparent';
 
-// тестовые стили, удалите их
-.page__body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--vh);
-}
+@import './components/elements/aside-menu';
+@import './components/elements/accent-text';
+
+@import './pages/service-page';

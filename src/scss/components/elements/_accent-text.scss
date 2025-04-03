@@ -1,0 +1,19 @@
+.accent-text {
+  border-radius: 8px;
+  padding: 24px;
+  background-color: var(--blue-light-color);
+
+  @media screen and (width <= 768px) {
+    padding: 16px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+
+    @media screen and (width <= 768px) {
+      font-size: 16px;
+    }
+  }
+}

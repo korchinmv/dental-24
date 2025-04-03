@@ -17,7 +17,7 @@
 }
 
 .page__body {
-  color: var(--gray);
+  color: var(--black-color);
   display: flex;
   flex-direction: column;
   min-width: 375px;
@@ -87,4 +87,87 @@ button {
   width: 1px;
   height: 1px;
   clip: rect(0 0 0 0);
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.2;
+
+  @media screen and (width <= 1024px) {
+    font-size: 36px;
+  }
+
+  @media screen and (width <= 768px) {
+    font-size: 32px;
+  }
+
+  @media screen and (width <= 576px) {
+    font-size: 28px;
+  }
+}
+
+// .block-title {
+//   font-weight: 600;
+//   font-size: 40px;
+//   line-height: 1.2;
+// }
+
+.text-block {
+  &__subtitle {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+
+    @media screen and (width <= 768px) {
+      font-size: 18px;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+
+    @media screen and (width <= 768px) {
+      font-size: 16px;
+    }
+
+    margin-40 {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__list {
+    padding-left: 2.7rem;
+  }
+
+  &__list-item {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    list-style-type: disc;
+
+    @media screen and (width <= 768px) {
+      font-size: 16px;
+    }
+
+    strong {
+      font-weight: 700;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+
+  .margin-40 {
+    margin-bottom: 40px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 32px;
+    }
+  }
 }
