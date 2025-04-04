@@ -1,0 +1,20 @@
+.slider-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 7px;
+  width: 100%;
+  z-index: 2;
+
+  &.swiper-pagination-progressbar {
+    border-radius: 2px;
+    background-color: var(--blue-light-color);
+    height: 2px;
+  }
+
+  .swiper-pagination-progressbar-fill {
+    background-color: var(--blue-color);
+    border-radius: 2px;
+    height: 2px;
+  }
+}

@@ -1,1 +1,2 @@
-console.log('components');
+import "./functions/showMore.js";
+import "./components/slider.js";

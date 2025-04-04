@@ -1,0 +1,70 @@
+.doctor-card {
+  display: flex;
+  flex-direction: column;
+
+  &__img {
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+
+    @media screen and (width <= 768px) {
+      font-size: 18px;
+    }
+  }
+
+  &__proffesion {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+
+    @media screen and (width <= 768px) {
+      font-size: 14px;
+    }
+  }
+
+  &__bot {
+    display: flex;
+    column-gap: 8px;
+  }
+
+  &__sign-btn,
+  &__profile-btn {
+    border-radius: 4px;
+    padding: 14px 16px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+    width: 100%;
+    text-align: center;
+    transition:
+      background-color 0.3s,
+      color 0.3s,
+      opacity 0.3s;
+  }
+
+  &__sign-btn {
+    color: var(--white-color);
+    background-color: var(--blue-color);
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__profile-btn {
+    color: var(--blue-color);
+    background-color: var(--blue-light-color);
+
+    &:hover {
+      color: var(--white-color);
+      background-color: var(--blue-color);
+    }
+  }
+}

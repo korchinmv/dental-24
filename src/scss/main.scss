@@ -7,8 +7,14 @@
 // подключения компонентов страницы
 @import './components/ui/button-primary';
 @import './components/ui/button-transparent';
+@import './components/ui/slider-pagination';
 
 @import './components/elements/aside-menu';
 @import './components/elements/accent-text';
+
+@import './components/blocks/doctors-list';
+@import './components/blocks/popular-service';
+
+@import './components/cards/doctors-card';
 
 @import './pages/service-page';

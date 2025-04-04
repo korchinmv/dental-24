@@ -31,8 +31,8 @@
   }
 
   &:hover {
-    color: #ffffff;
-    border-color: #ffffff;
+    color: var(--white-color);
+    border-color: var(--white-color);
 
     &::before {
       opacity: 1;

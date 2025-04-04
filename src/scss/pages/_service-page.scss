@@ -196,15 +196,6 @@
 
   &__price-title {
     margin-bottom: 40px;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.2;
-    color: var(--blue-color);
-
-    @media screen and (width <= 768px) {
-      margin-bottom: 32px;
-      font-size: 24px;
-    }
   }
 
   &__price {
@@ -215,7 +206,8 @@
     }
   }
 
-  &__price-table {
+  &__price-table,
+  &__doctors-title {
     margin-bottom: 16px;
 
     @media screen and (width <= 768px) {
@@ -225,5 +217,45 @@
 
   &__price-btn {
     width: 100%;
+  }
+
+  &__doctors {
+    margin-bottom: 120px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__doctors-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+
+    @media screen and (width <= 1200px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (width <= 1024px) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 32px;
+    }
+
+    @media screen and (width <= 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (width <= 576px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__doctors-btn {
+    width: 100%;
+  }
+
+  &__popular-service {
+    margin-bottom: 80px;
   }
 }

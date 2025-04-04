@@ -107,11 +107,20 @@ button {
   }
 }
 
-// .block-title {
-//   font-weight: 600;
-//   font-size: 40px;
-//   line-height: 1.2;
-// }
+.block-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+
+  &--blue {
+    color: var(--blue-color);
+  }
+
+  @media screen and (width <= 768px) {
+    margin-bottom: 32px;
+    font-size: 24px;
+  }
+}
 
 .text-block {
   &__subtitle {
