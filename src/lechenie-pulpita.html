@@ -4,6 +4,89 @@
 @include('partials/head.html')
 
 <body class="page__body">
+  <div class="wrapper stick_hd uk-sticky uk-sticky-fixed" uk-sticky="" style="position: sticky; top: 0px;">
+    <div class="container header_stick_line">
+      <div class="head_logo">
+        <a href="/">
+          <img class="" src="https://dental-24.ru/local/templates/DNT24/img/d_full_logo.svg" alt="">
+          <img class="uk-hidden@s" src="/img/d_smp_logo.svg" alt="">
+        </a>
+      </div>
+
+      <div class="head_center ">
+
+        <div class="top_btn_section">
+          <a href="#" class="btn tb_elem rec_call open_rec_form"
+            onclick="yaCounter53199532.reachGoal('reception_record');
+                   window.open('https://booking.medflex.ru/?user=2920dedb8acb2245c8bfa1b8b8ab578a','_blank'); return false;">
+            <span class="tb_ico ico_calendar_white"></span>
+            <span class="tb_cont_elem tb_text">Запись на прием</span>
+          </a>
+
+          <a href="whatsapp://send?phone=+79677611160&amp;abid=+79677611160/" class="btn tb_elem wa_btn"><span
+              class="tb_ico ico_whatsapp_white"></span></a>
+
+          <div class="mb_mb_btn uk-hidden@m">
+            <div class="mobile_menu_icon">
+              <button class="mobile_burger ico_mobile_burger_white" uk-toggle="target: #mobile_menu"
+                type="button"></button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="head_right uk-visible@m">
+        <div class="hr_elem">
+          <span>Круглосуточно 24/7, 365 дней</span>
+          <div class="hr_icon ico_clock"></div>
+        </div>
+        <div class="hr_elem">
+          <span>ул. Советской Армии, д. 151, 1-ый этаж</span>
+          <div class="hr_icon ico_map_marker"></div>
+        </div>
+        <div class="hr_elem med_text hr_call">
+          <span>Телефон для связи: <a href="tel:8(846)922-80-88">8 (846) 922-80-88</a></span>
+          <div class="hr_icon ico_call"></div>
+        </div>
+        <div class="hr_elem med_text hr_call">
+          <span>Бесплатная линия: <a href="tel:8(800)555-36-15">8 (800) 555-36-15</a></span>
+          <div class="hr_icon ico_call"></div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <div class="wrapper ">
+    <div class="container header_menu uk-visible@m">
+
+
+      <div class="head_h_menu">
+
+        <div class="parent_root"><a href="/" class="selected">Главная</a></div>
+
+        <div class="parent_root"><a href="/uslugi/">Услуги</a></div>
+
+        <div class="parent_root"><a href="/price/">Цены</a></div>
+
+        <div class="parent_root"><a href="/actions/">Акции</a></div>
+
+        <div class="parent_root"><a href="/nasha-komanda/">Наша команда</a></div>
+
+        <div class="parent_root"><a href="/nashi-raboty/">Наши работы</a></div>
+
+        <div class="parent_root"><a href="/otzyvy/">Отзывы</a></div>
+
+        <div class="parent_root"><a href="/stati/">Статьи</a></div>
+
+        <div class="parent_root"><a href="/contacts/">Контакты</a></div>
+
+
+      </div>
+    </div>
+  </div>
+
   <main class="main">
     <section class="service-page">
       <div class="container">
@@ -42,37 +125,39 @@
         </div>
 
         <div class="service-page__wrapper">
-          <aside class="service-page__aside aside-menu">
-            <ul class="aside-menu__list">
-              <li class="aside-menu__item">
-                <a class="aside-menu__link" href="#">Имплантация зубов</a>
-              </li>
-              <li class="aside-menu__item">
-                <a class="aside-menu__link" href="#">Лечение кариеса щадящими методами</a>
-              </li>
-              <li class="aside-menu__item aside-menu__item--active">
-                <a class="aside-menu__link" href="#">Лечение пульпита</a>
-              </li>
-              <li class="aside-menu__item">
-                <a class="aside-menu__link" href="#">Эстетическая стоматология</a>
-              </li>
-              <li class="aside-menu__item">
-                <a class="aside-menu__link" href="#">Протезирование</a>
-              </li>
-              <li class="aside-menu__item">
-                <a class="aside-menu__link" href="#">Удаление зубов</a>
-              </li>
-              <li class="aside-menu__item">
-                <a class="aside-menu__link" href="#">Лечение периодонта</a>
-              </li>
-              <li class="aside-menu__item">
-                <a class="aside-menu__link" href="#">Брекеты</a>
-              </li>
-              <li class="aside-menu__item">
-                <a class="aside-menu__link" href="#">Отбеливание зубов и снятие зубного камня</a>
-              </li>
-            </ul>
-          </aside>
+          <div class="service-page__aside uk-width-auto uk-visible@m uk-first-column">
+            <div class="col_left_block">
+              <div class="section_list_menu">
+                <div class="section_list_menu_elem ">
+                  <a href="#">Имплантация зубов</a>
+                </div>
+                <div class="section_list_menu_elem ">
+                  <a href="#">Лечение кариеса щадящими методами</a>
+                </div>
+                <div class="section_list_menu_elem ">
+                  <a href="#">Лечение пульпита</a>
+                </div>
+                <div class="section_list_menu_elem ">
+                  <a href="#">Эстетическая стоматология</a>
+                </div>
+                <div class="section_list_menu_elem ">
+                  <a href="#">Протезирование</a>
+                </div>
+                <div class="section_list_menu_elem ">
+                  <a href="#">Удаление зубов</a>
+                </div>
+                <div class="section_list_menu_elem ">
+                  <a href="#">Лечение периодонта</a>
+                </div>
+                <div class="section_list_menu_elem ">
+                  <a href="#">Брекеты</a>
+                </div>
+                <div class="section_list_menu_elem ">
+                  <a href="#">Отбеливание зубов и снятие зубного камня</a>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div class="service-page__content">
             <div class="service-page__text-block text-block"">
@@ -384,6 +469,76 @@
       </div>
     </section>
   </main>
+
+  <div class="wrapper footer_section bg_blue">
+    <div class="container">
+      <div class="footer_block">
+        <div class="footer_grid">
+          <div class="uk-grid uk-text-center uk-text-left@m uk-margin-auto@s" uk-grid="">
+
+
+            <div class="ftg_l uk-width-medium@l uk-width-auto@m uk-text-center uk-text-left@m uk-first-column">
+              <div class="fg_block ">
+                <a class="pro_logo" href="https://prodoctorov.ru/samara/lpu/30469-diamant/" target="_blank">
+                  <img src="https://prodoctorov.ru/rating/widget/recommend/30469/240.png"
+                    title="ПроДокторов - Стоматология «Диамант», Самара"
+                    alt="ПроДокторов - Стоматология «Диамант», Самара" class="lazy">
+                </a>
+
+                <div class="fg_org_info">
+                  <p>ООО ДИАМАНТ © 2019. <br> Все права защищены.</p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="ftg_c uk-width-expand  uk-text-center">
+              <div class="fg_block uk-text-center">
+                <div class="ft_contact_info">
+                  <span class="ft_ct_ico ico_map_marker_white"></span>
+                  <span class="text">г. Самара, ул. Советской Армии, д. 151, этаж 1</span>
+                </div>
+
+                <div class="ft_contact_info">
+                  <span class="ft_ct_ico ico_24_white"></span>
+                  <span class="text"><span class="uk-visible@m">График работы клиники:</span> Круглосуточно (365
+                    дней)</span>
+                </div>
+
+                <div class="fg_org_info uk-visible@m">
+                  <p>
+                    ИНН/КПП: 6318119792 / 631801001
+                    <br>
+                    ОГРН: 1026301519320
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="ftg_r uk-width-medium@l uk-width-auto@m  uk-text-center uk-text-right@m">
+              <div class="fg_block fg_extra">
+                <p>
+                  Бесплатная линия:
+                  <br>
+                  <a class="fg_free_call" href="tel:8(800)555-36-15">
+                    <span class="ico_call_footer"></span>
+                    <span class="phone">8 (800) 555-36-15</span>
+                  </a>
+                </p>
+                <p>
+                  <a class="btn fg_rec_call"
+                    onclick="yaCounter53199532.reachGoal('reception_record'); window.open('https://booking.medflex.ru/?user=2920dedb8acb2245c8bfa1b8b8ab578a','_blank'); return false;">
+                    Запись на прием
+                  </a>
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
