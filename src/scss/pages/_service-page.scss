@@ -1,6 +1,6 @@
 .service-page {
   &__head {
-    background-image: url('../img/bg-image.jpg');
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 0;
@@ -11,11 +11,11 @@
     justify-content: space-between;
     margin-bottom: 40px;
 
-    @media screen and (width <= 1200px) {
+    @media screen and (width <=1200px) {
       padding: 60px;
     }
 
-    @media screen and (width <= 768px) {
+    @media screen and (width <=768px) {
       padding: 40px 24px;
     }
 
@@ -32,8 +32,20 @@
     }
   }
 
+  &__pulpit {
+    background-image: url('../img/bg-image.jpg');
+  }
+
+  &__caries {
+    background-image: url('../img/caries/bg.jpg');
+
+    @media screen and (width <=768px) {
+      background-image: url('../img/caries/bg-mobile.jpg');
+    }
+  }
+
   &__aside {
-    @media screen and (width <= 768px) {
+    @media screen and (width <=768px) {
       display: none;
     }
   }
@@ -50,7 +62,7 @@
     justify-content: space-between;
     margin-right: 30px;
 
-    @media screen and (width <= 768px) {
+    @media screen and (width <=768px) {
       margin-right: 0;
     }
   }
@@ -58,7 +70,7 @@
   &__head-title {
     color: var(--white-color);
 
-    @media screen and (width <= 768px) {
+    @media screen and (width <=768px) {
       margin-bottom: 40px;
     }
   }
@@ -68,13 +80,13 @@
     gap: 16px;
     flex-wrap: wrap;
 
-    @media screen and (width <= 1200px) {
+    @media screen and (width <=1200px) {
       flex-direction: column;
     }
   }
 
   &__head-btn {
-    @media screen and (width <= 1200px) {
+    @media screen and (width <=1200px) {
       width: 100%;
     }
   }
@@ -88,7 +100,7 @@
     max-width: 480px;
     width: 100%;
 
-    @media screen and (width <= 768px) {
+    @media screen and (width <=768px) {
       display: none;
     }
   }
@@ -98,7 +110,7 @@
     font-size: 16px;
     margin-bottom: 40px;
 
-    @media screen and (width <= 768px) {
+    @media screen and (width <=768px) {
       display: block;
     }
   }
@@ -113,7 +125,7 @@
       margin-bottom: 10px;
     }
 
-    @media screen and (width <= 768px) {
+    @media screen and (width <=768px) {
       font-size: 16px;
     }
   }
@@ -145,7 +157,7 @@
     display: flex;
     column-gap: 40px;
 
-    @media screen and (width <= 1200px) {
+    @media screen and (width <=1200px) {
       flex-direction: column;
       row-gap: 16px;
     }
@@ -155,7 +167,7 @@
       padding-bottom: 24px;
       margin-bottom: 24px;
 
-      @media screen and (width <= 768px) {
+      @media screen and (width <=768px) {
         padding-bottom: 16px;
         margin-bottom: 16px;
       }
@@ -169,7 +181,7 @@
     font-size: 18px;
     line-height: 1.4;
 
-    @media screen and (width <= 768px) {
+    @media screen and (width <=768px) {
       font-size: 16px;
     }
   }
@@ -181,7 +193,7 @@
     max-width: 680px;
     width: 100%;
 
-    @media screen and (width <= 768px) {
+    @media screen and (width <=768px) {
       font-size: 16px;
     }
   }
@@ -189,7 +201,7 @@
   &__accent-text {
     margin-bottom: 80px;
 
-    @media screen and (width <= 768px) {
+    @media screen and (width <=768px) {
       margin-bottom: 48px;
     }
   }
@@ -201,7 +213,7 @@
   &__price {
     margin-bottom: 80px;
 
-    @media screen and (width <= 768px) {
+    @media screen and (width <=768px) {
       margin-bottom: 48px;
     }
   }
@@ -210,7 +222,7 @@
   &__doctors-title {
     margin-bottom: 16px;
 
-    @media screen and (width <= 768px) {
+    @media screen and (width <=768px) {
       margin-bottom: 32px;
     }
   }
@@ -222,7 +234,7 @@
   &__doctors {
     margin-bottom: 120px;
 
-    @media screen and (width <= 768px) {
+    @media screen and (width <=768px) {
       margin-bottom: 80px;
     }
   }
@@ -233,20 +245,20 @@
     gap: 40px;
     margin-bottom: 40px;
 
-    @media screen and (width <= 1200px) {
+    @media screen and (width <=1200px) {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    @media screen and (width <= 1024px) {
+    @media screen and (width <=1024px) {
       grid-template-columns: repeat(1, 1fr);
       gap: 32px;
     }
 
-    @media screen and (width <= 768px) {
+    @media screen and (width <=768px) {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    @media screen and (width <= 576px) {
+    @media screen and (width <=576px) {
       grid-template-columns: repeat(1, 1fr);
     }
   }
@@ -257,5 +269,54 @@
 
   &__popular-service {
     margin-bottom: 80px;
+  }
+
+
+  &__caries-stages {
+    display: flex;
+    column-gap: 24px;
+    padding: 0;
+
+    @media screen and (width <=1024px) {
+      flex-wrap: wrap;
+      row-gap: 24px;
+    }
+  }
+
+  &__caries-stages-item {
+    @media screen and (width <=1024px) {
+      display: flex;
+    }
+  }
+
+  &__caries-stages-img {
+    margin-bottom: 16px;
+    max-width: 166px;
+
+    @media screen and (width <=1024px) {
+      margin: 0 16px 0 0;
+    }
+
+    @media screen and (width <=768px) {
+      max-width: 80px;
+      width: 100%;
+      flex-shrink: 0;
+      // object-fit: contain;
+    }
+  }
+
+  &__caries-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
+  &__caries-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0;
   }
 }
