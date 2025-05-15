@@ -44,6 +44,14 @@
     }
   }
 
+  &__delete-tooth {
+    background-image: url('../img/delete-tooth/bg.jpg');
+
+    @media screen and (width <=768px) {
+      background-image: url('../img/delete-tooth/bg-mobile.jpg');
+    }
+  }
+
   &__aside {
     @media screen and (width <=768px) {
       display: none;
